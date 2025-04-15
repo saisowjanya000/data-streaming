@@ -7,10 +7,6 @@ This project demonstrates a scalable real-time data streaming pipeline built on 
 
 ```text
 data-streaming/
-<<<<<<< HEAD
-│
-=======
->>>>>>> ee9b8e1 (add config and notebook files)
 ├── notebooks/
 │   ├── data_ingestion.py
 │   ├── transformations.py
