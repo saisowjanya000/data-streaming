@@ -4,6 +4,8 @@ This project demonstrates a scalable real-time data streaming pipeline built on 
 
 
 ## 📦 Project Structure
+
+```text
 databricks_streaming_project/
 │
 ├── notebooks/
@@ -18,9 +20,10 @@ databricks_streaming_project/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
+```
 
 
-##🚀 **Features**
+## 🚀 **Features**
 - Ingest data from Kafka / Auto Loader / Azure Event Hubs  
 - Parse and transform JSON or CSV data streams  
 - Deduplicate and apply watermarking  
@@ -46,6 +49,36 @@ databricks_streaming_project/
 
 ### 1. Clone the repository
 
-```bash
+
+bash
 git clone https://github.com/your-org/databricks_streaming_project.git
-cd databricks_streaming_project```
+cd databricks_streaming_project
+
+
+### 2. Install requirements (for local dev or Databricks CLI)
+bash
+pip install -r requirements.txt
+
+### 3. Import Notebooks into Databricks
+Use the Databricks UI or CLI to import notebooks under /notebooks.
+
+
+### 4. Set up Secrets and Configs
+
+Store sensitive credentials (e.g., Kafka keys, storage access keys) using Databricks Secrets.
+Edit configs/streaming_config.json to match your streaming environment
+
+
+# ▶️ How to Run
+  - 1. Open 01_streaming_ingestion.py notebook in Databricks
+  - 2. Configure paths and secrets (via widgets or JSON config)
+  - 3. Start the stream using spark.readStream and trigger transformations
+  - 4. Monitor query progress using streamingQuery.lastProgress
+
+# 🛡️ Best Practices
+  - Use checkpointing to ensure exactly-once semantics
+  - Apply watermarking to handle late-arriving data
+  - Use Auto Loader for schema evolution support
+  - Monitor streaming query metrics in Spark UI
+
+
