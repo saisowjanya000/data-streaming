@@ -1,0 +1,7 @@
+{
+    "input_path": "/mnt/data/input",
+    "bronze_table": "bronze_table",
+    "silver_table": "silver_table",
+    "checkpoint_path_ingest": "/mnt/data/checkpoints/ingestion",
+    "checkpoint_path_transform": "/mnt/data/checkpoints/transform"
+}

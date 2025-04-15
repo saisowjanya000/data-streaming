@@ -7,16 +7,16 @@ This project demonstrates a scalable real-time data streaming pipeline built on 
 
 ```text
 data-streaming/
+<<<<<<< HEAD
 │
+=======
+>>>>>>> ee9b8e1 (add config and notebook files)
 ├── notebooks/
-│   ├── 01_streaming_ingestion.py
-│   ├── 02_streaming_transformations.py
-│   ├── 03_streaming_output.py
-│   └── utils.py
-│
+│   ├── data_ingestion.py
+│   ├── transformations.py
+│   └── output_writer.py
 ├── configs/
-│   └── streaming_config.json
-│
+│   └── config.json
 ├── requirements.txt
 ├── README.md
 └── LICENSE
@@ -51,8 +51,8 @@ data-streaming/
 
 
 bash
-git clone https://github.com/your-org/databricks_streaming_project.git
-cd databricks_streaming_project
+git clone https://github.com/saisowjanya000/data-streaming.git
+cd data-streaming
 
 
 ### 2. Install requirements (for local dev or Databricks CLI)
@@ -70,7 +70,7 @@ Edit configs/streaming_config.json to match your streaming environment
 
 
 # ▶️ How to Run
-  - 1. Open 01_streaming_ingestion.py notebook in Databricks
+  - 1. Open streaming_ingestion.py notebook in Databricks
   - 2. Configure paths and secrets (via widgets or JSON config)
   - 3. Start the stream using spark.readStream and trigger transformations
   - 4. Monitor query progress using streamingQuery.lastProgress
