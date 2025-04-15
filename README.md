@@ -6,7 +6,7 @@ This project demonstrates a scalable real-time data streaming pipeline built on 
 ## 📦 Project Structure
 
 ```text
-databricks_streaming_project/
+data-streaming/
 │
 ├── notebooks/
 │   ├── 01_streaming_ingestion.py
